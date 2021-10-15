@@ -2,7 +2,7 @@
 Multi-developer Git workflow scheme
 
 
-1) the remote 'master' is always stable.
+1) the remote 'master' (or 'main') is always stable.
 2) one strategy is to have a long-running 'dev' branch, which we all work on.
 3) we each can branch off the local dev and explore locally, but merge often into the local dev copy.
 
