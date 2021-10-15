@@ -1,12 +1,12 @@
-# mulit-developer-workflow
+# multi-developer-workflow
 Multi-developer Git workflow scheme
 
 
-1) the remote 'master' (or 'main') is always stable.
-2) one strategy is to have a long-running 'dev' branch, which we all work on.
-3) we each can branch off the local dev and explore locally, but merge often into the local dev copy.
+1) The remote 'master' (or 'main') is always stable.
+2) Our strategy is to have a long-running 'dev' branch, which we all work on.
+3) Each developer can branch off the *local* dev and explore locally, and merge often into the *local* dev copy.
 
-4) My adaptation of one recommended merge sequence for 'dev' is:
+4) Our recommended merge sequence for 'dev' is:
 
     a) On Github, maintain a master branch and a dev branch
 
@@ -16,15 +16,15 @@ Multi-developer Git workflow scheme
 
     d) Each developer works on the dev branch as follows:
 
-        i) new development is done on a local branch 'a' off of dev
+        i) New development is done on a local branch 'a' off of dev
     
-        ii) when ready to merge 'a' into 'dev':
+        ii) When ready to merge 'a' into 'dev':
    
            a.o) git commit 'a'
         
            a.i) git checkout 'dev'
         
-           a.ii) git pull origin dev /'/ capture updates from other developers
+           a.ii) git pull origin dev // capture updates from other developers
         
            a.iii) fix merge issues in local dev
         
